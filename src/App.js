@@ -1,23 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
+import SideNav from './components/SideNav';
+import GalleryCollection1 from './components/GalleryCollection1';
+import GalleryCollection2 from './components/GalleryCollection2';
+import GalleryCollection3 from './components/GalleryCollection3';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App-container">
+    <Router>
+    <SideNav/>
+      <Switch className="main-view">
+      <Route path="/gallery2"><GalleryCollection2/></Route>
+      <Route path="/gallery3"><GalleryCollection3/></Route>
+      <Route path="/"><GalleryCollection1/></Route>
+      </Switch>
+    </Router>
     </div>
   );
 }
