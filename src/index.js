@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 //import navbae scss file
 import './components/sideNav.scss'
+import './components/gallery.scss'
 ReactDOM.render(
   <React.StrictMode>
     <App />

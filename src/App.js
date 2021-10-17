@@ -11,7 +11,7 @@ import GalleryCollection3 from './components/GalleryCollection3';
 
 function App() {
   return (
-    <div className="App-container">
+    <div className="app-container">
     <Router>
     <SideNav/>
       <Switch className="main-view">

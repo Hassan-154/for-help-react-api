@@ -5,3 +5,7 @@
   list-style: none;
   text-decoration: none;
 }
+.app-container{
+  width: 100%;
+  overflow-x: hidden;
+}
