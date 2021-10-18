@@ -10,28 +10,36 @@
 }
 .image__nav{
     max-width: 600px;
-    margin: 0 auto;
+    margin: 50px auto;
 }
 .image__nav ul{
     display: flex;
+    margin-left: -90px;
 }
 .image__nav ul li{
-    margin-left: 30px;
+    margin-left: 90px;
 }
 .image__nav ul li button{
     cursor: pointer;
     outline: none;
     border: none;
     color: black;
-    background: rgb(243, 203, 203);
-    border: 2px solid red;
+    background-color: rgba(190, 195, 209, 0.698);
+    border: 2px solid black;
+    padding: 5px 30px;
+    color: black;
+    font-size: 18px;
+}
+.image__nav ul li button:hover{
+    background-color: rgba(130, 130, 133, 0.698);
 }
 .non-active{
     display: none;
 }
 .gallery__container img{
-    width: 280px;
-    height: 280px;
+    width: 320px;
+    height: 320px;
+    border-radius: 50px;
 }
 
 

@@ -5,7 +5,8 @@
   list-style: none;
   text-decoration: none;
 }
+
 .app-container{
-  width: 100%;
-  overflow-x: hidden;
+  background-color: rgb(222,226,230);
+  overflow: hidden;
 }
